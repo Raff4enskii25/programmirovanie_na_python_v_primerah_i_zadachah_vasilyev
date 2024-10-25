@@ -1,0 +1,10 @@
+from tkinter import *
+wnd=Tk()
+wnd.title("Окно с кнопкой")
+wnd.geometry("250x150")
+wnd.resizable(False, False)
+lbl=Label(wnd,text='Всем привет!',font=('Times New Roman',20))
+lbl.place(x=40,y=30)
+btn=Button(wnd,text='Закрыть',font=('Arial Bold',13),command=wnd.destroy)
+btn.place(x=40,y=100,width=170,height=30)
+wnd.mainloop()

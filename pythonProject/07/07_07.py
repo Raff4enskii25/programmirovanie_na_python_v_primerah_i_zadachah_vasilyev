@@ -1,0 +1,18 @@
+from datetime import date, time, datetime
+mydate = date.today()
+print("Дата:", mydate)
+mytime = time(21, 42, 15)
+print("Время:", mytime)
+mydatetime = datetime(2024,10,9,21,42,15)
+print("Дата полностью:", mydatetime)
+print("День недели:", mydatetime.isoweekday())
+d=mydatetime.date()
+print("Дата:", d)
+t=mydatetime.time()
+print("Время:", t)
+nd = mydatetime.replace(year=2077,hour=21, minute=47)
+print("Новая дата:", nd)
+print("Дней до 2077 года:", nd-mydatetime)
+print("В секундах до 2077 года:", int((nd-mydatetime).total_seconds()))
+delta = nd-mydatetime
+print("Дни:", delta.days)

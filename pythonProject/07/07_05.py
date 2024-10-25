@@ -1,0 +1,10 @@
+from datetime import time
+mytime = time(13,35,20)
+print("Время:", mytime)
+print("Часы:", mytime.hour)
+print("Минуты:", mytime.minute)
+print("Секунды", mytime.second)
+newtime = mytime.replace(15, second=33)
+print("Новое время:", newtime)
+mytime = time.fromisoformat("21:31:52")
+print("Время:", mytime)

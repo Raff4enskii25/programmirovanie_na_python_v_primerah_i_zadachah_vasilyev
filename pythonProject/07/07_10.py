@@ -1,0 +1,5 @@
+txt = input("Введите текст: ")
+mf = open("D:\Documents\PythonTest\\pythonProject\\resources\\newtxt.txt", 'w', encoding='UTF8')
+mf.write(txt)
+mf.close()
+print("Текст записан в файл")
